@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/options.js - firedoc</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                </a>
+                    <h1 class="project-name">firedoc</h1> <span class="project-version">1.0.1</span>
+                    <p class="description">Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+            <li><a href="#api-enums">枚举</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="class" href="../classes/CLI.html">CLI</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocBuilder.html">DocBuilder</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocParser.html">DocParser</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocView.html">DocView</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Files.html">Files</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Help.html">Help</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Main.html">Main</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Options.html">Options</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Server.html">Server</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Utils.html">Utils</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/YUIDoc.html">YUIDoc</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/yuidoc.html">yuidoc</a></li>
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1 class="file-heading">文件: lib/options.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+ * Code licensed under the BSD License:
+ * https://github.com/yui/yuidoc/blob/master/LICENSE
+ */
+/* global __dirname */
+/* global YUI       */
+/* global process   */
+
+YUI.add(&#x27;options&#x27;, function (Y) {
+
+  var path = require(&#x27;path&#x27;);
+
+  /**
+   * Handles argument parsing
+   * @module yuidoc
+   * @class Options
+   */
+
+  /**
+   * Parses arguments and returns an Object of config options
+   * @method Options
+   * @param {Array} args Arguments to parse
+   * @return {Object} The config object
+   */
+  Y.Options = function (args) {
+    /*jshint onevar:false */
+
+    var options = {
+      port: 3000,
+      nocode: false
+    };
+
+    while (args.length &gt; 0) {
+      var v = args.shift();
+      // options.* defined in ./builder.js
+      switch (v) {
+      case &#x27;--en&#x27;:
+        options.themedir = path.join(__dirname, &#x27;../themes/default&#x27;);
+        break;
+      case &#x27;--zh&#x27;:
+        options.zh = true;
+        options.themedir = path.join(__dirname, &#x27;../themes/default_zh&#x27;);
+        break;
+      case &#x27;--lint&#x27;:
+        options.lint = true;
+        options.parseOnly = true;
+        options.writeJSON = false;
+        options.quiet = true;
+        break;
+      case &quot;--debug&quot;:
+        Y.applyConfig({
+          debug: true,
+          filter: &#x27;debug&#x27;
+        });
+        break;
+      case &quot;--charset&quot;:
+        Y.charset = args.shift() || &#x27;utf8&#x27;;
+        Y.log(&#x27;Setting default charset to &#x27; + Y.charset, &#x27;yuidoc&#x27;, &#x27;warn&#x27;);
+        break;
+      case &quot;-c&quot;:
+      case &quot;--config&quot;:
+      case &quot;--configfile&quot;:
+        options.configfile = args.shift();
+        break;
+      case &quot;-e&quot;:
+      case &quot;--extension&quot;:
+        options.extension = args.shift();
+        break;
+      case &quot;-x&quot;:
+      case &quot;--exclude&quot;:
+        options.exclude = args.shift();
+        break;
+      case &quot;-v&quot;:
+      case &quot;--version&quot;:
+        console.error(Y.packageInfo.version);
+        process.exit(1);
+        break;
+      case &quot;--project-version&quot;:
+        options.version = args.shift();
+        break;
+      case &quot;-N&quot;:
+      case &quot;--no-color&quot;:
+        Y.config.useColor = false;
+        options.nocolor = true;
+        break;
+      case &quot;-D&quot;:
+      case &quot;--no-delete-out&quot;:
+        options.nodeleteout = true;
+        break;
+      case &quot;-C&quot;:
+      case &quot;--no-code&quot;:
+        options.nocode = true;
+        break;
+      case &quot;-n&quot;:
+      case &quot;--norecurse&quot;:
+        options.norecurse = true;
+        break;
+      case &quot;-S&quot;:
+      case &quot;--selleck&quot;:
+        options.selleck = true;
+        break;
+      case &quot;-V&quot;:
+      case &quot;--view&quot;:
+        options.dumpview = true;
+        break;
+      case &quot;-p&quot;:
+      case &quot;--parse-only&quot;:
+        options.parseOnly = true;
+        break;
+      case &quot;-o&quot;:
+      case &quot;--outdir&quot;:
+        options.outdir = args.shift();
+        break;
+      case &quot;-t&quot;:
+      case &quot;--themedir&quot;:
+        options.themedir = args.shift();
+        break;
+      case &quot;--server&quot;:
+        options.server = true;
+        var a = args.shift();
+        var p = parseInt(a, 10);
+        if (isNaN(p) || !p) {
+          if (a) {
+            args.unshift(a);
+          }
+          Y.log(&#x27;Failed to extract port, setting to the default :3000&#x27;, &#x27;warn&#x27;, &#x27;yuidoc&#x27;);
+        } else {
+          options.port = p;
+        }
+        break;
+      case &quot;-h&quot;:
+      case &quot;--help&quot;:
+        Y.showHelp();
+        break;
+      case &quot;-H&quot;:
+      case &quot;--helpers&quot;:
+        var list = args.shift();
+        if (list) {
+          options.helpers = list.split(&#x27;,&#x27;);
+        } else {
+          throw (&#x27;Failed to pass a helper file.&#x27;);
+        }
+        break;
+      case &quot;-T&quot;:
+      case &quot;--theme&quot;:
+        var theme = args.shift();
+        options.themedir = path.join(__dirname, &#x27;../&#x27;, &#x27;themes&#x27;, theme);
+        break;
+      case &#x27;--md&#x27;:
+      case &#x27;--markdown&#x27;:
+        options.useMarkdown = true;
+        options.themedir = path.join(__dirname, &#x27;../themes/markdown&#x27;);
+        break;
+      case &quot;-q&quot;:
+      case &quot;--quiet&quot;:
+        options.quiet = true;
+        break;
+      case &quot;--syntaxtype&quot;:
+        options.syntaxtype = args.shift();
+        break;
+      case &quot;--tab-to-space&quot;:
+        options.tabtospace = parseInt(args.shift(), 10);
+        if (typeof options.tabtospace === &#x27;number&#x27;) {
+          options.tabspace = &#x27;&#x27;;
+          for (var s = 0; s &lt; options.tabtospace; s++) {
+            options.tabspace += &#x27; &#x27;;
+          }
+        }
+        break;
+      case &quot;--no-sort&quot;:
+        options.dontsortfields = true;
+        break;
+      default:
+        if (!options.paths) {
+          options.paths = [];
+        }
+        if (v &amp;&amp; v.indexOf(&#x27;-&#x27;) === 0) {
+           throw (&#x27;Unknown option: &#x27; + v);
+        }
+        options.paths.push(v);
+      }
+    }
+
+    if (options.quiet) {
+      Y.applyConfig({
+        debug: false
+      });
+    }
+
+    // the options should be singlton for other modules
+    Y.options = options;
+    return options;
+  };
+
+});
+
+    </pre>
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

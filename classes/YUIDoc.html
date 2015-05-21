@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YUIDoc - firedoc</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                </a>
+                    <h1 class="project-name">firedoc</h1> <span class="project-version">1.0.1</span>
+                    <p class="description">Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+            <li><a href="#api-enums">Enums</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="class" href="../classes/CLI.html">CLI</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocBuilder.html">DocBuilder</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocParser.html">DocParser</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocView.html">DocView</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Files.html">Files</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Help.html">Help</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Main.html">Main</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Options.html">Options</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Server.html">Server</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Utils.html">Utils</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/YUIDoc.html">YUIDoc</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/yuidoc.html">yuidoc</a></li>
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1>YUIDoc Class</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/lib_yuidoc.js.html#l48"><code>lib&#x2F;yuidoc.js:48</code></a>
+        </div>
+
+            Module: <a href="../modules/yuidoc.html">yuidoc</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>YUIDoc main class</p>
+<pre class="code prettyprint"><code> var options = {
+     paths: [ './lib' ],
+     outdir: './out'
+ };
+
+ var Y = require('yuidoc');
+ var json = (new Y.YUIDoc(options)).run();</code></pre>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>Index</h2>
+    <div id="api-options">
+        Show:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>Property</h3>
+    <ul class="index-list properties">
+        <li class="index-item property private">
+            <a href="#property_dirmap">dirmap</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_endtime">endtime</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_filecount">filecount</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_filemap">filemap</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_OPTIONS">OPTIONS</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_options">options</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_selleck">selleck</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_starttime">starttime</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>Method</h3>
+    <ul class="index-list methods">
+        <li class="index-item method constructor">
+            <a href="#method_YUIDoc">YUIDoc</a>
+            <span class="flag constructor">constructor</span>
+        </li>
+
+        <li class="index-item method private">
+            <a href="#method__processConfig">_processConfig</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method__setDefaultExcludes">_setDefaultExcludes</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_parsedir">parsedir</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_parsefiles">parsefiles</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_run">run</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_runPreprocessors">runPreprocessors</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_walk">walk</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_writeJSON">writeJSON</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="class-detail">
+
+    <div class="properties-detail">
+        <h2>Properties</h2>
+        <a name="property_dirmap" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>dirmap</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l86"><code>lib&#x2F;yuidoc.js:86</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Holder for the list of directories we are processing.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_endtime" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>endtime</code>
+    <span class="type">Timestamp</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l386"><code>lib&#x2F;yuidoc.js:386</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Timestamp holder so we know when YUIDoc has finished the parse process.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_filecount" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>filecount</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l65"><code>lib&#x2F;yuidoc.js:65</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Holds the number of files that we are processing.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_filemap" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>filemap</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l79"><code>lib&#x2F;yuidoc.js:79</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Holder for the list of files we are processing.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_OPTIONS" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>OPTIONS</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+        <span class="flag final">final</span>
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l28"><code>lib&#x2F;yuidoc.js:28</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>The default list of configuration options</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_options" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>options</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l94"><code>lib&#x2F;yuidoc.js:94</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Internal holder for configuration options.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_selleck" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>selleck</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l72"><code>lib&#x2F;yuidoc.js:72</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Hash map of dirnames to selleck config options.</p>
+</div>
+
+
+
+    </div>
+</div>
+<a name="property_starttime" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>starttime</code>
+    <span class="type">Timestamp</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l365"><code>lib&#x2F;yuidoc.js:365</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description"><p>Timestamp holder so we know when YUIDoc started the parse process.</p>
+</div>
+
+
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+    <div class="constructor"><h2>Constructor</h2><a name="method_YUIDoc" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>YUIDoc</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>config</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l48"><code>lib&#x2F;yuidoc.js:48</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>Parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">config</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>The config object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+</div>
+
+    <div class="methods-detail">
+        <h2>Methods</h2>
+        <a name="method__processConfig" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>_processConfig</code>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l126"><code>lib&#x2F;yuidoc.js:126</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Does post process on self.options.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method__setDefaultExcludes" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>_setDefaultExcludes</code>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l111"><code>lib&#x2F;yuidoc.js:111</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Always exclude these directories</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_parsedir" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>parsedir</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>dir</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l148"><code>lib&#x2F;yuidoc.js:148</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Walks the passed directory and grabs all the files recursively.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>Parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">dir</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The directory to parse the contents of.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_parsefiles" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>parsefiles</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>dir</code>
+                </li>
+                <li class="arg">
+                        <code>files</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l188"><code>lib&#x2F;yuidoc.js:188</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Gathers all the file data and populates the filemap and dirmap hashes.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>Parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">dir</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The directory to start from.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">files</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            <p>List of files to parse.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_run" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>run</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l359"><code>lib&#x2F;yuidoc.js:359</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Process the config, walk the file tree and write out the JSON data.</p>
+
+        </div>
+
+
+            <div class="returns">
+                <h4>Returns:</h4>
+
+                <div class="returns-description">
+                    <span>Type:</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>The JSON data returned from the DocParser</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_runPreprocessors" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>runPreprocessors</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l242"><code>lib&#x2F;yuidoc.js:242</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Applies preprocessors to the data tree.
+This function first clones the data and operates on the clone.</p>
+
+        </div>
+
+
+            <div class="returns">
+                <h4>Returns:</h4>
+
+                <div class="returns-description">
+                    <span>Type:</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>The mutated data</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_walk" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>walk</code>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l137"><code>lib&#x2F;yuidoc.js:137</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Walks the paths and parses the directory contents</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_writeJSON" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>writeJSON</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>parser</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_yuidoc.js.html#l277"><code>lib&#x2F;yuidoc.js:277</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Writes the parser JSON data to disk.
+Applies preprocessors, if any.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>Parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">parser</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>The DocParser instance to use</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>Returns:</h4>
+
+                <div class="returns-description">
+                    <span>Type:</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>The JSON data returned from the DocParser</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

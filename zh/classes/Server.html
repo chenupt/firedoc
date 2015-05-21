@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Server - firedoc</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                </a>
+                    <h1 class="project-name">firedoc</h1> <span class="project-version">1.0.1</span>
+                    <p class="description">Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+            <li><a href="#api-enums">枚举</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="class" href="../classes/CLI.html">CLI</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocBuilder.html">DocBuilder</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocParser.html">DocParser</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocView.html">DocView</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Files.html">Files</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Help.html">Help</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Main.html">Main</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Options.html">Options</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Server.html">Server</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Utils.html">Utils</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/YUIDoc.html">YUIDoc</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/yuidoc.html">yuidoc</a></li>
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1>Server 类</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            于<a href="../files/lib_server.js.html#l9"><code>lib&#x2F;server.js:9</code></a>定义
+        </div>
+
+            模组: <a href="../modules/yuidoc.html">yuidoc</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Provides the <code>--server</code> server option for YUIDoc</p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property private">
+            <a href="#property__externalData">_externalData</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_clazz">clazz</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_files">files</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_home">home</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_init">init</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_modules">modules</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_parse">parse</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_routes">routes</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_start">start</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="class-detail">
+
+    <div class="properties-detail">
+        <h2>属性(Property)</h2>
+            <a name="property__externalData" class="anchor-link"></a>
+            <div class="property item private">
+                <h3 class="name"><code>_externalData</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+            
+            
+                    <span class="flag private">private</span>
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/lib_server.js.html#l15"><code>lib&#x2F;server.js:15</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>Cache for external mixed in data.</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+
+    <div class="methods-detail">
+        <h2>方法</h2>
+        <a name="method_clazz" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>clazz</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>req</code>
+                </li>
+                <li class="arg">
+                        <code>res</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l129"><code>lib&#x2F;server.js:129</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p><code>/classes</code> endpoint</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">req</code>
+                            <span class="type">Request</span>
+
+
+                        <div class="param-description">
+                            <p>Express request object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">res</code>
+                            <span class="type">Response</span>
+
+
+                        <div class="param-description">
+                            <p>Express response object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_files" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>files</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>req</code>
+                </li>
+                <li class="arg">
+                        <code>res</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l106"><code>lib&#x2F;server.js:106</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p><code>/files</code> endpoint</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">req</code>
+                            <span class="type">Request</span>
+
+
+                        <div class="param-description">
+                            <p>Express request object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">res</code>
+                            <span class="type">Response</span>
+
+
+                        <div class="param-description">
+                            <p>Express response object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_home" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>home</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>req</code>
+                </li>
+                <li class="arg">
+                        <code>res</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l161"><code>lib&#x2F;server.js:161</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p><code>/</code> endpoint</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">req</code>
+                            <span class="type">Request</span>
+
+
+                        <div class="param-description">
+                            <p>Express request object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">res</code>
+                            <span class="type">Response</span>
+
+
+                        <div class="param-description">
+                            <p>Express response object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_init" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>init</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l173"><code>lib&#x2F;server.js:173</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Creates the Express server and prep's YUI for serving</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_modules" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>modules</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>req</code>
+                </li>
+                <li class="arg">
+                        <code>res</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l145"><code>lib&#x2F;server.js:145</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p><code>/modules</code> endpoint</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">req</code>
+                            <span class="type">Request</span>
+
+
+                        <div class="param-description">
+                            <p>Express request object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">res</code>
+                            <span class="type">Response</span>
+
+
+                        <div class="param-description">
+                            <p>Express response object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_parse" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>parse</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>req</code>
+                </li>
+                <li class="arg">
+                        <code>res</code>
+                </li>
+                <li class="arg">
+                        <code>next</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l22"><code>lib&#x2F;server.js:22</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Middleware to parse the API docs per request</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">req</code>
+                            <span class="type">Request</span>
+
+
+                        <div class="param-description">
+                            <p>Express request object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">res</code>
+                            <span class="type">Response</span>
+
+
+                        <div class="param-description">
+                            <p>Express response object</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">next</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            <p>Express next callback</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_routes" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>routes</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l40"><code>lib&#x2F;server.js:40</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Create the routes used to serve YUIDoc files dynamically</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_start" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>start</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_server.js.html#l191"><code>lib&#x2F;server.js:191</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Start the server with the supplied options.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">options</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>Server options</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

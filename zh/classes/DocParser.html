@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DocParser - firedoc</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                </a>
+                    <h1 class="project-name">firedoc</h1> <span class="project-version">1.0.1</span>
+                    <p class="description">Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+            <li><a href="#api-enums">枚举</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="class" href="../classes/CLI.html">CLI</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocBuilder.html">DocBuilder</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocParser.html">DocParser</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocView.html">DocView</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Files.html">Files</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Help.html">Help</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Main.html">Main</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Options.html">Options</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Server.html">Server</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Utils.html">Utils</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/YUIDoc.html">YUIDoc</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/yuidoc.html">yuidoc</a></li>
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1>DocParser 类</h1>
+<div class="box meta">
+
+        <div class="extends">
+            继承 Base
+        </div>
+
+        <div class="foundat">
+            于<a href="../files/lib_docparser.js.html#l843"><code>lib&#x2F;docparser.js:843</code></a>定义
+        </div>
+
+            模组: <a href="../modules/yuidoc.html">yuidoc</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>The doc parser accepts a <strong>map</strong> of files to file content.
+Once <code>parse()</code> is called, various properties will be populated
+with the parsers data (aggregated in the <code>'data'</code> property).</p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property">
+            <a href="#property_CORRECTIONS">CORRECTIONS</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_DIGESTERS">DIGESTERS</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_IGNORE_TAGLIST">IGNORE_TAGLIST</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_TAGLIST">TAGLIST</a>
+        </li>
+    </ul>
+</div>
+
+<div class="index-section attrs">
+    <h3>属性(Attribute)</h3>
+
+    <ul class="index-list attrs">
+        <li class="index-item attr">
+            <a href="#attr_currentclass">currentclass</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_currentfile">currentfile</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_currentmodule">currentmodule</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_currentsubmodule">currentsubmodule</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_digesters">digesters</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_dirmap">dirmap</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_emitters">emitters</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_filemap">filemap</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_mainmodule">mainmodule</a>
+        </li>
+        <li class="index-item attr">
+            <a href="#attr_syntaxtype">syntaxtype</a>
+        </li>
+    </ul>
+</div>
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+        <li class="index-item method constructor">
+            <a href="#method_DocParser">DocParser</a>
+            <span class="flag constructor">constructor</span>
+        </li>
+
+        <li class="index-item method private">
+            <a href="#method__resolveFor">_resolveFor</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_extract">extract</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_handlecomment">handlecomment</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_implodeString">implodeString</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_implodeString">implodeString</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_parse">parse</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_processblock">processblock</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_stringlog">stringlog</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_transform">transform</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_unindent">unindent</a>
+        </li>
+    </ul>
+</div>
+
+
+    <div class="index-section inherits-members">
+        <h3>继承成员变量</h3>
+        
+        <h4>属性(Property)</h4>
+        <ul class="index-list properties">
+        </ul>
+        
+        <h4>属性(Attribute)</h4>
+        <ul class="index-list attrs">
+        </ul>
+
+        <h4>方法</h4>
+        <ul class="index-list methods">
+        </ul>
+
+        <h4>事件</h4>
+        <ul class="index-list events">
+        </ul>
+
+    </div>
+
+
+</div>
+<div class="class-detail">
+
+    <div class="properties-detail">
+        <h2>属性(Property)</h2>
+            <a name="property_CORRECTIONS" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>CORRECTIONS</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+            
+            
+            
+                    <span class="flag final">final</span>
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/lib_docparser.js.html#l187"><code>lib&#x2F;docparser.js:187</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>Common errors will get scrubbed instead of being ignored.</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_DIGESTERS" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>DIGESTERS</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+            
+            
+            
+                    <span class="flag final">final</span>
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/lib_docparser.js.html#l210"><code>lib&#x2F;docparser.js:210</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>A map of the default tag processors, keyed by the
+            tag name.  Multiple tags can use the same digester
+            by supplying the string name that points to the
+            implementation rather than a function.</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_IGNORE_TAGLIST" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>IGNORE_TAGLIST</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+            
+            
+            
+                    <span class="flag final">final</span>
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/lib_docparser.js.html#l175"><code>lib&#x2F;docparser.js:175</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>A list of ignored tags. These tags should be ignored because there is
+            likely to be used for purposes other than JSDoc tags in JavaScript comments.</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_TAGLIST" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>TAGLIST</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+            
+            
+            
+                    <span class="flag final">final</span>
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/lib_docparser.js.html#l93"><code>lib&#x2F;docparser.js:93</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>A list of known tags.  This populates a member variable
+            during initialization, and will be updated if additional
+            digesters are added.</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+    <div class="attrs-detail">
+        <h2>属性(Attribute)</h2>
+        <div id="attr_currentclass" class="attr item">
+    <a name="config_currentclass"></a> 
+    <h3 class="name"><code>currentclass</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1083"><code>lib&#x2F;docparser.js:1083</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The class currently being parsed</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>currentclassChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>currentclass</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_currentfile" class="attr item">
+    <a name="config_currentfile"></a> 
+    <h3 class="name"><code>currentfile</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l931"><code>lib&#x2F;docparser.js:931</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The file currently being parsed</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>currentfileChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>currentfile</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_currentmodule" class="attr item">
+    <a name="config_currentmodule"></a> 
+    <h3 class="name"><code>currentmodule</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l988"><code>lib&#x2F;docparser.js:988</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The module currently being parsed</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>currentmoduleChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>currentmodule</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_currentsubmodule" class="attr item">
+    <a name="config_currentsubmodule"></a> 
+    <h3 class="name"><code>currentsubmodule</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1047"><code>lib&#x2F;docparser.js:1047</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The submodule currently being parsed</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>currentsubmoduleChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>currentsubmodule</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_digesters" class="attr item">
+    <a name="config_digesters"></a> 
+    <h3 class="name"><code>digesters</code></h3>
+    <span class="type"></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l871"><code>lib&#x2F;docparser.js:871</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Digesters process the tag/text pairs found in a
+comment block.  They are looked up by tag name.
+The digester gets the tagname, the value, the
+target object to apply values to, and the full
+block that is being processed.  Digesters can
+be declared as strings instead of a function --
+in that case, the program will try to look up
+the key listed and use the function there instead
+(it is an alias).  Digesters can return a host
+object in the case the tag defines a new key
+block type (modules/classes/methods/events/properties)</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>digestersChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>digesters</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_dirmap" class="attr item">
+    <a name="config_dirmap"></a> 
+    <h3 class="name"><code>dirmap</code></h3>
+    <span class="type"></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l921"><code>lib&#x2F;docparser.js:921</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A map of file names to directory name.  Provided in
+case this needs to be used to reset the module name
+appropriately -- currently not used</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>dirmapChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>dirmap</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_emitters" class="attr item">
+    <a name="config_emitters"></a> 
+    <h3 class="name"><code>emitters</code></h3>
+    <span class="type"></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l893"><code>lib&#x2F;docparser.js:893</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Emitters will be schemas for the types of payloads
+the parser will emit.  Not implemented.</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>emittersChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>emitters</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_filemap" class="attr item">
+    <a name="config_filemap"></a> 
+    <h3 class="name"><code>filemap</code></h3>
+    <span class="type"></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l913"><code>lib&#x2F;docparser.js:913</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The map of file names to file content.</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>filemapChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>filemap</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_mainmodule" class="attr item">
+    <a name="config_mainmodule"></a> 
+    <h3 class="name"><code>mainmodule</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l952"><code>lib&#x2F;docparser.js:952</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The main documentation block for the module itself.</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>mainmoduleChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>mainmodule</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+<div id="attr_syntaxtype" class="attr item">
+    <a name="config_syntaxtype"></a> 
+    <h3 class="name"><code>syntaxtype</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l904"><code>lib&#x2F;docparser.js:904</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Comment syntax type.</p>
+
+    </div>
+
+
+        <div class="emits box">
+            <h4>Fires event <code>syntaxtypeChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>syntaxtype</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+
+    </div>
+
+    <div class="constructor">
+        <h2>构造函数</h2><a name="method_DocParser" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>DocParser</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>o</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l843"><code>lib&#x2F;docparser.js:843</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">o</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>the config object</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="methods-detail">
+        <h2>方法</h2>
+        <a name="method__resolveFor" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>_resolveFor</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1122"><code>lib&#x2F;docparser.js:1122</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Takes a non-namespaced classname and resolves it to a namespace (to support <code>@for</code>)</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">value</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The classname to resolve</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        <p>The resolved namespace + classname</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_extract" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>extract</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>filemap</code>
+                </li>
+                <li class="arg">
+                        <code>dirmap</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1292"><code>lib&#x2F;docparser.js:1292</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Accepts a map of filenames to file content.  Returns
+a map of filenames to an array of API comment block
+text.  This expects the comment to start with / **
+on its own line, and end with * / on its own
+line.  Override this function to provide an
+alternative comment parser.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">filemap</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>A map of filenames to file content</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dirmap</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            <p>A map of file names to directory name</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>A map of filenames to an array of extracted
+comment text.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_handlecomment" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>handlecomment</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>comment</code>
+                </li>
+                <li class="arg">
+                        <code>file</code>
+                </li>
+                <li class="arg">
+                        <code>line</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1214"><code>lib&#x2F;docparser.js:1214</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Transforms a JavaDoc style comment block (less the start and end of it)
+into a list of tag/text pairs. The leading space and '*' are removed,
+but the remaining whitespace is preserved so that the output should be
+friendly for both markdown and html parsers.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">comment</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The comment to parse</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">file</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The file it was parsed from</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">line</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The line number it was found on</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_implodeString" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>implodeString</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>str</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l37"><code>lib&#x2F;docparser.js:37</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Flatten a string, remove all line breaks and replace them with a token</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">str</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The string to operate on</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        <p>The modified string</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_implodeString" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>implodeString</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>str</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l47"><code>lib&#x2F;docparser.js:47</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Un-flatten a string, replace tokens injected with <code>implodeString</code></p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">str</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The string to operate on</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        <p>The modified string</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_parse" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>parse</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>filemap</code>
+                </li>
+                <li class="arg">
+                        <code>dirmap</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/DocParser.html" class="crosslink">DocParser</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1538"><code>lib&#x2F;docparser.js:1538</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Extracts and transforms the filemap provided to constructor</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">filemap</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            <p>A map of filenames to file content</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dirmap</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            <p>A map of file names to directory name</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="../classes/DocParser.html" class="crosslink">DocParser</a></span>
+                    <p>
+                        <p>this parser instance.  The total results
+are available in parser.data.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_processblock" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>processblock</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>an</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1348"><code>lib&#x2F;docparser.js:1348</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Processes all the tags in a single comment block</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">an</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            <p>array of the tag/text pairs</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_stringlog" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>stringlog</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>data</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l11"><code>lib&#x2F;docparser.js:11</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Parses the JSON data and formats it into a nice log string for
+filename and line number: <code>/file/name.js:123</code></p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">data</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>The data block from the parser</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        <p>The formatted string.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_transform" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>transform</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>commentmap</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1422"><code>lib&#x2F;docparser.js:1422</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Transforms a map of filenames to arrays of comment blocks into a
+JSON structure that represents the entire processed API doc info
+and relationships between elements for the entire project.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">commentmap</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            <p>The hash of files and parsed comment blocks</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>The transformed data for the project</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_unindent" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>unindent</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>content</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_docparser.js.html#l1193"><code>lib&#x2F;docparser.js:1193</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Normalizes the initial indentation of the given <em>content</em> so that the first line
+is unindented, and all other lines are unindented to the same degree as the
+first line. So if the first line has four spaces at the beginning, then all
+lines will be unindented four spaces. Ported from <a href="https://github.com/rgrove/selleck">Selleck</a></p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">content</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>Text to unindent.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        <p>Unindented text.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

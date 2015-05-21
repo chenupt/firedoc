@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Files - firedoc</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                </a>
+                    <h1 class="project-name">firedoc</h1> <span class="project-version">1.0.1</span>
+                    <p class="description">Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+            <li><a href="#api-enums">枚举</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="class" href="../classes/CLI.html">CLI</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocBuilder.html">DocBuilder</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocParser.html">DocParser</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/DocView.html">DocView</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Files.html">Files</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Help.html">Help</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Main.html">Main</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Options.html">Options</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Server.html">Server</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/Utils.html">Utils</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+                <li>
+                    <a class="class" href="../classes/YUIDoc.html">YUIDoc</a>
+                    <a href="../modules/yuidoc.html" class="api-list-item-module">@yuidoc</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/yuidoc.html">yuidoc</a></li>
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1>Files 类</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            于<a href="../files/lib_files.js.html#l8"><code>lib&#x2F;files.js:8</code></a>定义
+        </div>
+
+            模组: <a href="../modules/yuidoc.html">yuidoc</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Ported fileutils methods from <a href="http://github.com/rgrove/selleck">Selleck</a></p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_copyAssets">copyAssets</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_copyDirectory">copyDirectory</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_copyFile">copyFile</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_copyPath">copyPath</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_deletePath">deletePath</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_getJSON">getJSON</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_isDirectory">isDirectory</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_isFile">isFile</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_isSymbolicLink">isSymbolicLink</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_lstatSync">lstatSync</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_statSync">statSync</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_writeFile">writeFile</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="class-detail">
+
+
+
+
+    <div class="methods-detail">
+        <h2>方法</h2>
+        <a name="method_copyAssets" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>copyAssets</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>from</code>
+                </li>
+                <li class="arg">
+                        <code>dest</code>
+                </li>
+                <li class="arg">
+                        <code>deleteFirst</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l360"><code>lib&#x2F;files.js:360</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Copy the theme assets directory</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">from</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The source directory</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dest</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The destination directory</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">deleteFirst</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+                        <div class="param-description">
+                            <p>Should the directory be deleted if it exists</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            <p>The callback to be executed</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_copyDirectory" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>copyDirectory</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>source</code>
+                </li>
+                <li class="arg">
+                        <code>dest</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[overwrite=false]</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l37"><code>lib&#x2F;files.js:37</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Copy a directory from one location to another</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">source</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The source directory</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dest</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The destination directory</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">overwrite</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：false</span>
+
+
+                        <div class="param-description">
+                            <p>Whether or not to overwrite destination files
+if they already exist.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            <p>The callback to be executed when complete.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_copyFile" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>copyFile</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>source</code>
+                </li>
+                <li class="arg">
+                        <code>dest</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[overwrite=false]</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l125"><code>lib&#x2F;files.js:125</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Copy a file from one location to another</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">source</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The source file</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dest</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The destination file</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">overwrite</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：false</span>
+
+
+                        <div class="param-description">
+                            <p>Whether or not to overwrite destination files
+if they already exist.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type">Callback</span>
+
+
+                        <div class="param-description">
+                            <p>The callback to be executed when complete.</p>
+
+                        </div>
+
+                            <ul class="params-list">
+                                <li class="param">
+                                        <code class="param-name">err</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a></span>
+
+                                    <div class="param-description">
+                                        <p>The Error returned from Node</p>
+
+                                    </div>
+
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_copyPath" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>copyPath</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>source</code>
+                </li>
+                <li class="arg">
+                        <code>dest</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[overwrite=false]</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l178"><code>lib&#x2F;files.js:178</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>If <em>source</em> is a file, copies it to <em>dest</em>. If it's a directory, recursively
+copies it and all files and directories it contains to <em>dest</em>.</p>
+<p>Note that when attempting to copy a file into a directory, you should specify
+the full path to the new file (including the new filename). Otherwise, it will
+be interpreted as an attempt to copy the <em>source</em> file <em>over</em> the <em>dest</em>
+directory instead of <em>into</em> it.</p>
+<p>Known issues:</p>
+<ul>
+<li>Doesn't preserve ownership or permissions on copied files/directories.</li>
+</ul>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">source</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>Source path.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dest</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>Destination path.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">overwrite</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：false</span>
+
+
+                        <div class="param-description">
+                            <p>Whether or not to overwrite destination files
+if they already exist.</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type">Callback</span>
+
+
+                        <div class="param-description">
+                            <p>The callback to execute when completed.</p>
+
+                        </div>
+
+                            <ul class="params-list">
+                                <li class="param">
+                                        <code class="param-name">err</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a></span>
+
+                                    <div class="param-description">
+                                        
+                                    </div>
+
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_deletePath" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>deletePath</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l224"><code>lib&#x2F;files.js:224</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>If <em>path</em> is a file, deletes it. If <em>path</em> is a directory, recursively deletes
+it and all files and directories it contains.</p>
+<p>This method is synchronous.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>File or directory to delete.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_getJSON" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>getJSON</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>filename</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l407"><code>lib&#x2F;files.js:407</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Helper method for getting JSON data from a local file</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">filename</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The filename to parse JSON from</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    <p>
+                        <p>The JSON data</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_isDirectory" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>isDirectory</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[link=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l248"><code>lib&#x2F;files.js:248</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Check to see if this is a directory</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The path to check</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">link</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：false</span>
+
+
+                        <div class="param-description">
+                            <p>Also validate a symlink</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    <p>
+                        <p>True if it is a directory</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_isFile" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>isFile</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[link=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l278"><code>lib&#x2F;files.js:278</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Check to see if this is a File</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The path to check</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">link</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：false</span>
+
+
+                        <div class="param-description">
+                            <p>Also validate a symlink</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    <p>
+                        <p>True if it is a file</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_isSymbolicLink" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>isSymbolicLink</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l305"><code>lib&#x2F;files.js:305</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Check to see if this is a SymLink</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The path to check</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    <p>
+                        <p>True if it is a link</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_lstatSync" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>lstatSync</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">fs.Stats | null</span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l319"><code>lib&#x2F;files.js:319</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Like <code>fs.lstatSync()</code>, but returns <code>null</code> instead of throwing when <em>path</em>
+doesn't exist. Will still throw on other types of errors.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>Path to stat.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type">fs.Stats | null</span>
+                    <p>
+                        <p><code>fs.Stats</code> object, or <code>null</code> if <em>path</em> doesn't exist.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_statSync" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>statSync</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">fs.Stats | null</span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l340"><code>lib&#x2F;files.js:340</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Like <code>fs.statSync()</code>, but returns <code>null</code> instead of throwing when <em>path</em>
+doesn't exist. Will still throw on other types of errors.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">path</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>Path to stat.</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                    <span>类型：</span>
+                    <span class="type">fs.Stats | null</span>
+                    <p>
+                        <p><code>fs.Stats</code> object, or <code>null</code> if <em>path</em> doesn't exist.</p>
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_writeFile" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>writeFile</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>file</code>
+                </li>
+                <li class="arg">
+                        <code>data</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/lib_files.js.html#l422"><code>lib&#x2F;files.js:422</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Helper method for writing files to disk. It wraps the NodeJS file API</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">file</code>
+                            <span class="type">Path</span>
+
+
+                        <div class="param-description">
+                            <p>The filename to write to</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">data</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>The data to write</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type">Callback</span>
+
+                            <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
